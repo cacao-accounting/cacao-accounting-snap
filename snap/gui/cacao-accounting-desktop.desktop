@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Cacao Accounting
+Exec=cacao-accounting-desktop-snap
+Icon=${SNAP}/meta/gui/cacao-accounting-desktop.png
+Categories=Office;

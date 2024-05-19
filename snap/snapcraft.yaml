@@ -1,16 +1,28 @@
-name: cacao-accounting
+name: cacao-accounting-desktop
+title: Cacao Accounting Software
+summary: Accounting solution for small and medium-sized businesses
+type: app
 base: core24
 version: "2024.05.07"
-summary: Accounting solution for small and medium-sized businesses
+license: Apache-2.0
+grade: stable
+confinement: strict
+icon: snap/gui/cacao-accounting-desktop.png
+issues: https://github.com/cacao-accounting/cacao-accounting/issues
+source-code: https://github.com/cacao-accounting/cacao-accounting-snap
+website: https://cacaoaccounting.com
 description: |
   Accounting solution for the finance management of small and medium-sized companies that includes
   modules for Accounts Payables, Accounts Receivables, Inventory, Treasury and General Accounting
-grade: devel
-confinement: strict
 apps:
-  cacao-accounting-desktop:
+  cacao-accounting-desktop-snap:
     command: /bin/cacao_accounting_desktop
-    plugs: [home]
+    plugs:
+      - home
+      - desktop
+      - desktop-legacy
+      - wayland
+      - x11
     environment:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8
