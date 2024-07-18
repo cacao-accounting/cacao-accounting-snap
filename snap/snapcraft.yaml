@@ -13,7 +13,10 @@ source-code: https://github.com/cacao-accounting/cacao-accounting-snap
 website: https://cacaoaccounting.com
 description: |
   Accounting solution for the finance management of small and medium-sized companies that includes
-  modules for Accounts Payables, Accounts Receivables, Inventory, Treasury and General Accounting
+  modules for Accounts Payables, Accounts Receivables, Inventory, Treasury and General Accounting.
+  Cacao Accounting can generate reports such as Balance Sheet, Profit and Loss Statements, Trial Balance,
+  Journal and General Ledger, you can also export your information to analyze it with a spreadsheet or a
+  business intelligence tool.
 apps:
   cacao-accounting-desktop-snap:
     command: /bin/cacao_accounting_desktop
