@@ -3,7 +3,7 @@ title: Cacao Accounting Software
 summary: Accounting solution for small and medium-sized businesses
 type: app
 base: core24
-version: "2024.08.11"
+version: "2024.08.17"
 license: Apache-2.0
 grade: stable
 confinement: strict
