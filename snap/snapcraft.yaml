@@ -17,9 +17,10 @@ description: |
   Cacao Accounting can generate reports such as Balance Sheet, Profit and Loss Statements, Trial Balance,
   Journal and General Ledger, you can also export your information to analyze it with a spreadsheet or a
   business intelligence tool.
+
 apps:
   cacao-accounting-desktop-snap:
-    command: /bin/cacao_accounting_desktop
+    command: bin/cacao_accounting_desktop
     plugs:
       - home
       - desktop
@@ -37,3 +38,11 @@ parts:
     source: https://github.com/cacao-accounting/cacao-accounting-desktop.git
     python-requirements:
       - requirements.txt
+    build-packages:
+      - gcc
+      - libffi-dev
+      - libssl-dev
+      - python3-dev
+    stage-packages:
+      - python3
+      - python3-venv
