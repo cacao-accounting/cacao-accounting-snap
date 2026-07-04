@@ -2,7 +2,7 @@ name: cacao-accounting-desktop
 title: Cacao Accounting Software
 summary: Accounting solution for small and medium-sized businesses
 type: app
-base: core24
+base: core26
 version: "2026.7.4"
 license: Apache-2.0
 grade: stable
