@@ -1,9 +1,8 @@
 name: cacao-accounting-desktop
 title: Cacao Accounting Software
 summary: Accounting solution for small and medium-sized businesses
-type: app
 base: core26
-version: "2026.7.4"
+version: "2026.7.11"
 license: Apache-2.0
 grade: stable
 confinement: strict
@@ -19,7 +18,7 @@ description: |
   business intelligence tool.
 
 apps:
-  cacao-accounting-desktop-snap:
+  cacao-accounting-desktop:
     command: bin/cacao_accounting_desktop
     plugs:
       - home
@@ -32,7 +31,7 @@ apps:
       LC_ALL: C.UTF-8
 
 parts:
-  cacao-accounting:
+  cacao-accounting-desktop:
     plugin: python
     source-type: git
     source: https://github.com/cacao-accounting/cacao-accounting-desktop.git
@@ -43,6 +42,24 @@ parts:
       - libffi-dev
       - libssl-dev
       - python3-dev
+      - libpango1.0-dev
+      - libcairo2-dev
+      - libgdk-pixbuf-2.0-dev
+      - libxml2-dev
+      - libxslt1-dev
+      - libharfbuzz-dev
     stage-packages:
-      - python3
-      - python3-venv
+      - python3.14
+      - libpango-1.0-0
+      - libpangocairo-1.0-0
+      - libcairo2
+      - libgdk-pixbuf-2.0-0
+      - libxml2-16
+      - libxslt1.1
+      - libharfbuzz0b
+      - libgl1
+      - libegl1
+      - libxkbcommon0
+      - libnss3
+      - libnspr4
+      - libdbus-1-3
